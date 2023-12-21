@@ -1,5 +1,5 @@
-const removeFromArray = function (array, num) {
-    return array.splice(array.indexOf(num), 1);
+const removeFromArray = function (array, ...num) {
+    return array.filter(val => !num.includes(val));
 };
 
 // Do not edit below this line
